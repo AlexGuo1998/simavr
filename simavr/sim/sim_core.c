@@ -153,7 +153,7 @@ void crash(avr_t* avr)
 #else
 #define T(w)
 #define REG_TOUCH(a, r)
-#define STATE(_f, args...)
+#define STATE(_f, ...)
 #define SREG()
 
 void crash(avr_t* avr)

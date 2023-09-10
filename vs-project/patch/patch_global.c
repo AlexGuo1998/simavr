@@ -68,3 +68,14 @@ char* basename(const char* filename)
     p = max_ptr(p, strrchr(filename, '\\'));
     return p ? p + 1 : (char*)filename;
 }
+
+#ifdef _MSC_VER
+#include <intrin.h>
+void __sync_synchronize() {
+    MemoryBarrier();
+}
+
+unsigned int __builtin_popcount(unsigned int n) {
+    return __popcnt(n);
+}
+#endif

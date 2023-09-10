@@ -337,7 +337,10 @@ avr_adc_irq_notify(
 	avr_t * avr = p->io.avr;
 
 	switch (irq->irq) {
-		case ADC_IRQ_ADC0 ... ADC_IRQ_ADC15: {
+		case ADC_IRQ_ADC0: case ADC_IRQ_ADC1: case ADC_IRQ_ADC2: case ADC_IRQ_ADC3:
+		case ADC_IRQ_ADC4: case ADC_IRQ_ADC5: case ADC_IRQ_ADC6: case ADC_IRQ_ADC7:
+		case ADC_IRQ_ADC8: case ADC_IRQ_ADC9: case ADC_IRQ_ADC10: case ADC_IRQ_ADC11:
+		case ADC_IRQ_ADC12: case ADC_IRQ_ADC13: case ADC_IRQ_ADC14: case ADC_IRQ_ADC15: {
 			p->adc_values[irq->irq] = value;
 		} 	break;
 		case ADC_IRQ_TEMP: {

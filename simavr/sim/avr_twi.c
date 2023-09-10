@@ -22,6 +22,12 @@
 #include <stdio.h>
 #include "avr_twi.h"
 
+#ifdef __GNUC__
+#define make_attribute_unused __attribute__ ((unused))
+#else
+#define make_attribute_unused
+#endif
+
 /*
  * This block respectfully nicked straight out from the Atmel sample
  * code for AVR315. Typos and all.
@@ -86,7 +92,7 @@ _avr_twi_status_set(
 		avr_raise_interrupt(p->io.avr, &p->twi);
 }
 
-static __attribute__ ((unused)) inline uint8_t
+static make_attribute_unused inline uint8_t
 _avr_twi_status_get(
 		avr_twi_t * p)
 {

@@ -25,6 +25,7 @@
 #include <string.h>
 #include <ctype.h>
 #include <stdint.h>
+#include <alloca.h>
 #include "sim_io.h"
 
 int
@@ -198,7 +199,7 @@ avr_iomem_getirq(
 	// if given a name, replace the default one...
 	if (name) {
 		int l = strlen(name);
-		char n[l + 10];
+		char * n = alloca(l + 10);
 		sprintf(n, "avr.io.%s", name);
 		free((void*)avr->io[a].irq[index].name);
 		avr->io[a].irq[index].name = strdup(n);

@@ -120,6 +120,9 @@
     <ClInclude Include="patch\unistd.h">
       <Filter>patch</Filter>
     </ClInclude>
+    <ClInclude Include="patch\alloca.h">
+      <Filter>patch</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\simavr\cores\sim_mega32u4.c">

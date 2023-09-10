@@ -24,6 +24,12 @@
 
 #include "sim_avr.h"
 
+#ifdef __GNUC__
+#define make_attribute_unused __attribute__ ((unused))
+#else
+#define make_attribute_unused
+#endif
+
 #ifdef __cplusplus
 extern "C" {
 #endif
@@ -112,7 +118,7 @@ avr_regbit_get(
  */
 static inline uint8_t
 avr_regbit_from_value(
-	avr_t * avr __attribute__((unused)),
+	avr_t * avr make_attribute_unused,
 	avr_regbit_t rb,
 	uint8_t value)
 {
