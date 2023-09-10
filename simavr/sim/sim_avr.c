@@ -80,20 +80,20 @@ avr_get_time_stamp(
 		avr_t * avr )
 {
 	uint64_t stamp;
-#ifndef CLOCK_MONOTONIC_RAW
 #ifndef _WIN32
+#ifndef CLOCK_MONOTONIC_RAW
 	/* CLOCK_MONOTONIC_RAW isn't portable, here is the POSIX alternative.
 	 * Only downside is that it will drift if the system clock changes */
 	struct timeval tv;
 	gettimeofday(&tv, NULL);
 	stamp = (((uint64_t)tv.tv_sec) * 1E9) + (tv.tv_usec * 1000);
 #else
-	stamp = 0; // TODO: test only
-#endif
-#else
 	struct timespec tp;
 	clock_gettime(CLOCK_MONOTONIC_RAW, &tp);
 	stamp = (tp.tv_sec * 1E9) + tp.tv_nsec;
+#endif
+#else
+	stamp = win32_gettimestampns();
 #endif
 	if (!avr->time_base)
 		avr->time_base = stamp;

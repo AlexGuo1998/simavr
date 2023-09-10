@@ -69,6 +69,18 @@ char* basename(const char* filename)
     return p ? p + 1 : (char*)filename;
 }
 
+__int64 win32_gettimestampns() {
+    static double multiplier = 0;
+    if (multiplier == 0) {
+        LARGE_INTEGER freq = {0};
+        QueryPerformanceFrequency(&freq);
+        multiplier = 1e9 / freq.QuadPart;
+    }
+    LARGE_INTEGER counter = {0};
+    QueryPerformanceCounter(&counter);
+    return (__int64)(counter.QuadPart * multiplier);
+}
+
 #ifdef _MSC_VER
 #include <intrin.h>
 void __sync_synchronize() {
