@@ -22,6 +22,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#ifdef _WIN32
+#include <patch_global.h>
+#endif
 #include "sim_hex.h"
 #include "sim_elf.h"
 

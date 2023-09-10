@@ -26,7 +26,7 @@
 extern "C" {
 #endif
 
-#ifdef __MINGW32__
+#if defined(__MINGW32__) || defined(_WIN32)
 
 // Windows with MinGW
 

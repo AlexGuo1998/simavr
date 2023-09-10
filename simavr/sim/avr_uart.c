@@ -35,6 +35,9 @@
 #include <unistd.h>
 #include <stdint.h>
 #include <stdlib.h>
+#ifdef _WIN32
+#include <patch_global.h>
+#endif
 #include "avr_uart.h"
 #include "sim_hex.h"
 #include "sim_time.h"

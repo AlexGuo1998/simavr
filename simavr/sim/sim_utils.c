@@ -24,6 +24,9 @@
 
 #include <string.h>
 #include <stdlib.h>
+#ifdef _WIN32
+#include <patch_global.h>
+#endif
 
 #include "sim_utils.h"
 

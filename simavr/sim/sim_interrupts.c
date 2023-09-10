@@ -24,6 +24,9 @@
 #include <stdio.h>
 #include <string.h>
 #include <strings.h>
+#ifdef _WIN32
+#include <patch_global.h>
+#endif
 #include "sim_interrupts.h"
 #include "sim_avr.h"
 #include "sim_core.h"

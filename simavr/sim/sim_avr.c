@@ -26,6 +26,9 @@
 #include <time.h>
 #include <unistd.h>
 #include <sys/time.h>
+#ifdef _WIN32
+#include <patch_global.h>
+#endif
 #include "sim_avr.h"
 #include "sim_core.h"
 #include "sim_time.h"
@@ -78,11 +81,15 @@ avr_get_time_stamp(
 {
 	uint64_t stamp;
 #ifndef CLOCK_MONOTONIC_RAW
+#ifndef _WIN32
 	/* CLOCK_MONOTONIC_RAW isn't portable, here is the POSIX alternative.
 	 * Only downside is that it will drift if the system clock changes */
 	struct timeval tv;
 	gettimeofday(&tv, NULL);
 	stamp = (((uint64_t)tv.tv_sec) * 1E9) + (tv.tv_usec * 1000);
+#else
+	stamp = 0; // TODO: test only
+#endif
 #else
 	struct timespec tp;
 	clock_gettime(CLOCK_MONOTONIC_RAW, &tp);

@@ -26,7 +26,6 @@
 #include <unistd.h>
 #include <string.h>
 #include <errno.h>
-#include <pthread.h>
 #include "sim_avr.h"
 #include "sim_core.h" // for SET_SREG_FROM, READ_SREG_INTO
 #include "sim_hex.h"

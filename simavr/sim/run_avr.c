@@ -24,6 +24,9 @@
 #include <libgen.h>
 #include <string.h>
 #include <signal.h>
+#ifdef _WIN32
+#include <patch_global.h>
+#endif
 #include "sim_avr.h"
 #include "sim_elf.h"
 #include "sim_core.h"

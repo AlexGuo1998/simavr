@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="cores">
+      <UniqueIdentifier>{71b3f876-7918-41cd-92f7-5f90a983c200}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sim">
+      <UniqueIdentifier>{de18c9b1-aba8-4468-bc65-2062241fa804}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="patch">
+      <UniqueIdentifier>{08dcceb9-0001-49a0-80c8-d3ba2a66dcdc}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\simavr\sim\avr_acomp.h">
+      <Filter>sim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\simavr\sim\avr_adc.h">
+      <Filter>sim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\simavr\sim\avr_bitbang.h">
+      <Filter>sim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\simavr\sim\avr_eeprom.h">
+      <Filter>sim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\simavr\sim\avr_extint.h">
+      <Filter>sim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\simavr\sim\avr_flash.h">
+      <Filter>sim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\simavr\sim\avr_ioport.h">
+      <Filter>sim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\simavr\sim\avr_lin.h">
+      <Filter>sim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\simavr\sim\avr_spi.h">
+      <Filter>sim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\simavr\sim\avr_timer.h">
+      <Filter>sim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\simavr\sim\avr_twi.h">
+      <Filter>sim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\simavr\sim\avr_uart.h">
+      <Filter>sim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\simavr\sim\avr_usb.h">
+      <Filter>sim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\simavr\sim\avr_usi.h">
+      <Filter>sim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\simavr\sim\avr_watchdog.h">
+      <Filter>sim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\simavr\sim\fifo_declare.h">
+      <Filter>sim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\simavr\sim\sim_avr.h">
+      <Filter>sim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\simavr\sim\sim_avr_types.h">
+      <Filter>sim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\simavr\sim\sim_cmds.h">
+      <Filter>sim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\simavr\sim\sim_core.h">
+      <Filter>sim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\simavr\sim\sim_cycle_timers.h">
+      <Filter>sim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\simavr\sim\sim_elf.h">
+      <Filter>sim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\simavr\sim\sim_gdb.h">
+      <Filter>sim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\simavr\sim\sim_hex.h">
+      <Filter>sim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\simavr\sim\sim_interrupts.h">
+      <Filter>sim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\simavr\sim\sim_io.h">
+      <Filter>sim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\simavr\sim\sim_irq.h">
+      <Filter>sim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\simavr\sim\sim_network.h">
+      <Filter>sim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\simavr\sim\sim_regbit.h">
+      <Filter>sim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\simavr\sim\sim_time.h">
+      <Filter>sim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\simavr\sim\sim_utils.h">
+      <Filter>sim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\simavr\sim\sim_vcd_file.h">
+      <Filter>sim</Filter>
+    </ClInclude>
+    <ClInclude Include="patch\sim_core_config.h">
+      <Filter>patch</Filter>
+    </ClInclude>
+    <ClInclude Include="patch\sim_core_decl.h">
+      <Filter>patch</Filter>
+    </ClInclude>
+    <ClInclude Include="patch\patch_global.h">
+      <Filter>patch</Filter>
+    </ClInclude>
+    <ClInclude Include="patch\unistd.h">
+      <Filter>patch</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\simavr\cores\sim_mega32u4.c">
+      <Filter>cores</Filter>
+    </ClCompile>
+    <ClCompile Include="..\simavr\sim\avr_acomp.c">
+      <Filter>sim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\simavr\sim\avr_adc.c">
+      <Filter>sim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\simavr\sim\avr_bitbang.c">
+      <Filter>sim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\simavr\sim\avr_eeprom.c">
+      <Filter>sim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\simavr\sim\avr_extint.c">
+      <Filter>sim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\simavr\sim\avr_flash.c">
+      <Filter>sim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\simavr\sim\avr_ioport.c">
+      <Filter>sim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\simavr\sim\avr_lin.c">
+      <Filter>sim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\simavr\sim\avr_spi.c">
+      <Filter>sim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\simavr\sim\avr_timer.c">
+      <Filter>sim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\simavr\sim\avr_twi.c">
+      <Filter>sim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\simavr\sim\avr_uart.c">
+      <Filter>sim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\simavr\sim\avr_usb.c">
+      <Filter>sim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\simavr\sim\avr_usi.c">
+      <Filter>sim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\simavr\sim\avr_watchdog.c">
+      <Filter>sim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\simavr\sim\run_avr.c">
+      <Filter>sim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\simavr\sim\sim_avr.c">
+      <Filter>sim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\simavr\sim\sim_cmds.c">
+      <Filter>sim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\simavr\sim\sim_core.c">
+      <Filter>sim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\simavr\sim\sim_cycle_timers.c">
+      <Filter>sim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\simavr\sim\sim_dwarf.c">
+      <Filter>sim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\simavr\sim\sim_elf.c">
+      <Filter>sim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\simavr\sim\sim_gdb.c">
+      <Filter>sim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\simavr\sim\sim_hex.c">
+      <Filter>sim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\simavr\sim\sim_interrupts.c">
+      <Filter>sim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\simavr\sim\sim_io.c">
+      <Filter>sim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\simavr\sim\sim_irq.c">
+      <Filter>sim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\simavr\sim\sim_utils.c">
+      <Filter>sim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\simavr\sim\sim_vcd_file.c">
+      <Filter>sim</Filter>
+    </ClCompile>
+    <ClCompile Include="patch\patch_global.c">
+      <Filter>patch</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

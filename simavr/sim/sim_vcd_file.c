@@ -28,6 +28,9 @@
 #include <inttypes.h>
 #include <ctype.h>
 #include <time.h>
+#ifdef _WIN32
+#include <patch_global.h>
+#endif
 #include "sim_vcd_file.h"
 #include "sim_avr.h"
 #include "sim_time.h"
