@@ -71,16 +71,16 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>$(SolutionDir)patch;$(SolutionDir)..\simavr;$(SolutionDir)..\simavr\sim;$(IncludePath)</IncludePath>
+    <IncludePath>$(SolutionDir)patch;$(SolutionDir)..\simavr;$(SolutionDir)..\simavr\sim;$(SolutionDir)..\simavr\cores;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <IncludePath>$(SolutionDir)patch;$(SolutionDir)..\simavr;$(SolutionDir)..\simavr\sim;$(IncludePath)</IncludePath>
+    <IncludePath>$(SolutionDir)patch;$(SolutionDir)..\simavr;$(SolutionDir)..\simavr\sim;$(SolutionDir)..\simavr\cores;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>$(SolutionDir)patch;$(SolutionDir)..\simavr;$(SolutionDir)..\simavr\sim;$(IncludePath)</IncludePath>
+    <IncludePath>$(SolutionDir)patch;$(SolutionDir)..\simavr;$(SolutionDir)..\simavr\sim;$(SolutionDir)..\simavr\cores;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <IncludePath>$(SolutionDir)patch;$(SolutionDir)..\simavr;$(SolutionDir)..\simavr\sim;$(IncludePath)</IncludePath>
+    <IncludePath>$(SolutionDir)patch;$(SolutionDir)..\simavr;$(SolutionDir)..\simavr\sim;$(SolutionDir)..\simavr\cores;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -147,6 +147,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="..\simavr\cores\sim_core_declare.h" />
+    <ClInclude Include="..\simavr\cores\sim_mega2560.h" />
+    <ClInclude Include="..\simavr\cores\sim_megax.h" />
+    <ClInclude Include="..\simavr\cores\sim_megax4.h" />
+    <ClInclude Include="..\simavr\cores\sim_megax8.h" />
+    <ClInclude Include="..\simavr\cores\sim_megaxm1.h" />
+    <ClInclude Include="..\simavr\cores\sim_tinyx4.h" />
+    <ClInclude Include="..\simavr\cores\sim_tinyx5.h" />
     <ClInclude Include="..\simavr\sim\avr_acomp.h" />
     <ClInclude Include="..\simavr\sim\avr_adc.h" />
     <ClInclude Include="..\simavr\sim\avr_bitbang.h" />
@@ -186,7 +194,45 @@
     <ClInclude Include="patch\unistd.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\simavr\cores\sim_mega128.c" />
+    <ClCompile Include="..\simavr\cores\sim_mega1280.c" />
+    <ClCompile Include="..\simavr\cores\sim_mega1281.c" />
+    <ClCompile Include="..\simavr\cores\sim_mega1284.c" />
+    <ClCompile Include="..\simavr\cores\sim_mega128rfa1.c" />
+    <ClCompile Include="..\simavr\cores\sim_mega128rfr2.c" />
+    <ClCompile Include="..\simavr\cores\sim_mega16.c" />
+    <ClCompile Include="..\simavr\cores\sim_mega164.c" />
+    <ClCompile Include="..\simavr\cores\sim_mega168.c" />
+    <ClCompile Include="..\simavr\cores\sim_mega169.c" />
+    <ClCompile Include="..\simavr\cores\sim_mega16m1.c" />
+    <ClCompile Include="..\simavr\cores\sim_mega2560.c" />
+    <ClCompile Include="..\simavr\cores\sim_mega32.c" />
+    <ClCompile Include="..\simavr\cores\sim_mega324.c" />
+    <ClCompile Include="..\simavr\cores\sim_mega324a.c" />
+    <ClCompile Include="..\simavr\cores\sim_mega328.c" />
     <ClCompile Include="..\simavr\cores\sim_mega32u4.c" />
+    <ClCompile Include="..\simavr\cores\sim_mega48.c" />
+    <ClCompile Include="..\simavr\cores\sim_mega644.c" />
+    <ClCompile Include="..\simavr\cores\sim_mega64m1.c" />
+    <ClCompile Include="..\simavr\cores\sim_mega8.c" />
+    <ClCompile Include="..\simavr\cores\sim_mega88.c" />
+    <ClCompile Include="..\simavr\cores\sim_megax.c" />
+    <ClCompile Include="..\simavr\cores\sim_megax4.c" />
+    <ClCompile Include="..\simavr\cores\sim_megax8.c" />
+    <ClCompile Include="..\simavr\cores\sim_megaxm1.c" />
+    <ClCompile Include="..\simavr\cores\sim_tiny13.c" />
+    <ClCompile Include="..\simavr\cores\sim_tiny2313.c" />
+    <ClCompile Include="..\simavr\cores\sim_tiny2313a.c" />
+    <ClCompile Include="..\simavr\cores\sim_tiny24.c" />
+    <ClCompile Include="..\simavr\cores\sim_tiny25.c" />
+    <ClCompile Include="..\simavr\cores\sim_tiny4313.c" />
+    <ClCompile Include="..\simavr\cores\sim_tiny44.c" />
+    <ClCompile Include="..\simavr\cores\sim_tiny45.c" />
+    <ClCompile Include="..\simavr\cores\sim_tiny84.c" />
+    <ClCompile Include="..\simavr\cores\sim_tiny85.c" />
+    <ClCompile Include="..\simavr\cores\sim_tinyx4.c" />
+    <ClCompile Include="..\simavr\cores\sim_tinyx5.c" />
+    <ClCompile Include="..\simavr\cores\sim_usb162.c" />
     <ClCompile Include="..\simavr\sim\avr_acomp.c" />
     <ClCompile Include="..\simavr\sim\avr_adc.c" />
     <ClCompile Include="..\simavr\sim\avr_bitbang.c" />

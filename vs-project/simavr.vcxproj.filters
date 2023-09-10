@@ -12,6 +12,30 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\simavr\cores\sim_core_declare.h">
+      <Filter>cores</Filter>
+    </ClInclude>
+    <ClInclude Include="..\simavr\cores\sim_mega2560.h">
+      <Filter>cores</Filter>
+    </ClInclude>
+    <ClInclude Include="..\simavr\cores\sim_megax.h">
+      <Filter>cores</Filter>
+    </ClInclude>
+    <ClInclude Include="..\simavr\cores\sim_megax4.h">
+      <Filter>cores</Filter>
+    </ClInclude>
+    <ClInclude Include="..\simavr\cores\sim_megax8.h">
+      <Filter>cores</Filter>
+    </ClInclude>
+    <ClInclude Include="..\simavr\cores\sim_megaxm1.h">
+      <Filter>cores</Filter>
+    </ClInclude>
+    <ClInclude Include="..\simavr\cores\sim_tinyx4.h">
+      <Filter>cores</Filter>
+    </ClInclude>
+    <ClInclude Include="..\simavr\cores\sim_tinyx5.h">
+      <Filter>cores</Filter>
+    </ClInclude>
     <ClInclude Include="..\simavr\sim\avr_acomp.h">
       <Filter>sim</Filter>
     </ClInclude>
@@ -125,7 +149,121 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\simavr\cores\sim_mega8.c">
+      <Filter>cores</Filter>
+    </ClCompile>
+    <ClCompile Include="..\simavr\cores\sim_mega16.c">
+      <Filter>cores</Filter>
+    </ClCompile>
+    <ClCompile Include="..\simavr\cores\sim_mega16m1.c">
+      <Filter>cores</Filter>
+    </ClCompile>
+    <ClCompile Include="..\simavr\cores\sim_mega32.c">
+      <Filter>cores</Filter>
+    </ClCompile>
     <ClCompile Include="..\simavr\cores\sim_mega32u4.c">
+      <Filter>cores</Filter>
+    </ClCompile>
+    <ClCompile Include="..\simavr\cores\sim_mega48.c">
+      <Filter>cores</Filter>
+    </ClCompile>
+    <ClCompile Include="..\simavr\cores\sim_mega64m1.c">
+      <Filter>cores</Filter>
+    </ClCompile>
+    <ClCompile Include="..\simavr\cores\sim_mega88.c">
+      <Filter>cores</Filter>
+    </ClCompile>
+    <ClCompile Include="..\simavr\cores\sim_mega128.c">
+      <Filter>cores</Filter>
+    </ClCompile>
+    <ClCompile Include="..\simavr\cores\sim_mega128rfa1.c">
+      <Filter>cores</Filter>
+    </ClCompile>
+    <ClCompile Include="..\simavr\cores\sim_mega128rfr2.c">
+      <Filter>cores</Filter>
+    </ClCompile>
+    <ClCompile Include="..\simavr\cores\sim_mega164.c">
+      <Filter>cores</Filter>
+    </ClCompile>
+    <ClCompile Include="..\simavr\cores\sim_mega168.c">
+      <Filter>cores</Filter>
+    </ClCompile>
+    <ClCompile Include="..\simavr\cores\sim_mega169.c">
+      <Filter>cores</Filter>
+    </ClCompile>
+    <ClCompile Include="..\simavr\cores\sim_mega324.c">
+      <Filter>cores</Filter>
+    </ClCompile>
+    <ClCompile Include="..\simavr\cores\sim_mega324a.c">
+      <Filter>cores</Filter>
+    </ClCompile>
+    <ClCompile Include="..\simavr\cores\sim_mega328.c">
+      <Filter>cores</Filter>
+    </ClCompile>
+    <ClCompile Include="..\simavr\cores\sim_mega644.c">
+      <Filter>cores</Filter>
+    </ClCompile>
+    <ClCompile Include="..\simavr\cores\sim_mega1280.c">
+      <Filter>cores</Filter>
+    </ClCompile>
+    <ClCompile Include="..\simavr\cores\sim_mega1281.c">
+      <Filter>cores</Filter>
+    </ClCompile>
+    <ClCompile Include="..\simavr\cores\sim_mega1284.c">
+      <Filter>cores</Filter>
+    </ClCompile>
+    <ClCompile Include="..\simavr\cores\sim_mega2560.c">
+      <Filter>cores</Filter>
+    </ClCompile>
+    <ClCompile Include="..\simavr\cores\sim_megax.c">
+      <Filter>cores</Filter>
+    </ClCompile>
+    <ClCompile Include="..\simavr\cores\sim_megax4.c">
+      <Filter>cores</Filter>
+    </ClCompile>
+    <ClCompile Include="..\simavr\cores\sim_megax8.c">
+      <Filter>cores</Filter>
+    </ClCompile>
+    <ClCompile Include="..\simavr\cores\sim_megaxm1.c">
+      <Filter>cores</Filter>
+    </ClCompile>
+    <ClCompile Include="..\simavr\cores\sim_tiny13.c">
+      <Filter>cores</Filter>
+    </ClCompile>
+    <ClCompile Include="..\simavr\cores\sim_tiny24.c">
+      <Filter>cores</Filter>
+    </ClCompile>
+    <ClCompile Include="..\simavr\cores\sim_tiny25.c">
+      <Filter>cores</Filter>
+    </ClCompile>
+    <ClCompile Include="..\simavr\cores\sim_tiny44.c">
+      <Filter>cores</Filter>
+    </ClCompile>
+    <ClCompile Include="..\simavr\cores\sim_tiny45.c">
+      <Filter>cores</Filter>
+    </ClCompile>
+    <ClCompile Include="..\simavr\cores\sim_tiny84.c">
+      <Filter>cores</Filter>
+    </ClCompile>
+    <ClCompile Include="..\simavr\cores\sim_tiny85.c">
+      <Filter>cores</Filter>
+    </ClCompile>
+    <ClCompile Include="..\simavr\cores\sim_tiny2313.c">
+      <Filter>cores</Filter>
+    </ClCompile>
+    <ClCompile Include="..\simavr\cores\sim_tiny2313a.c">
+      <Filter>cores</Filter>
+    </ClCompile>
+    <ClCompile Include="..\simavr\cores\sim_tiny4313.c">
+      <Filter>cores</Filter>
+    </ClCompile>
+    <ClCompile Include="..\simavr\cores\sim_tinyx4.c">
+      <Filter>cores</Filter>
+    </ClCompile>
+    <ClCompile Include="..\simavr\cores\sim_tinyx5.c">
+      <Filter>cores</Filter>
+    </ClCompile>
+    <ClCompile Include="..\simavr\cores\sim_usb162.c">
       <Filter>cores</Filter>
     </ClCompile>
     <ClCompile Include="..\simavr\sim\avr_acomp.c">

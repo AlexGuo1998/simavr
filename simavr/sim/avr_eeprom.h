@@ -92,7 +92,7 @@ typedef struct avr_eeprom_desc_t {
 		.r_eearl = EEARL,\
 		.r_eedr = EEDR,\
 		.r_eecr = EECR,\
-		.eepm = { },		\
+		.eepm = { 0 },		\
 		.eempe = AVR_IO_REGBIT(EECR, EEMWE),\
 		.eepe = AVR_IO_REGBIT(EECR, EEWE),\
 		.eere = AVR_IO_REGBIT(EECR, EERE),\
