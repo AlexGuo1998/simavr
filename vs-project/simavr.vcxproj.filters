@@ -311,9 +311,6 @@
     <ClCompile Include="..\simavr\sim\avr_watchdog.c">
       <Filter>sim</Filter>
     </ClCompile>
-    <ClCompile Include="..\simavr\sim\run_avr.c">
-      <Filter>sim</Filter>
-    </ClCompile>
     <ClCompile Include="..\simavr\sim\sim_avr.c">
       <Filter>sim</Filter>
     </ClCompile>
