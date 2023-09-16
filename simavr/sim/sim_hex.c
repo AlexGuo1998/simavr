@@ -27,6 +27,7 @@
 #endif
 #include "sim_hex.h"
 #include "sim_elf.h"
+#include "sim_avrobj.h"
 
 // friendly hex dump
 void hdump(const char *w, uint8_t *b, size_t l)
@@ -263,6 +264,12 @@ sim_setup_firmware(const char * filename, uint32_t loadBase,
 			}
 		}
                 free(chunk);
+	} else if (suffix && !strcasecmp(suffix, ".obj")) {
+		if (avrobj_read_firmware(filename, fp) == -1) {
+			fprintf(stderr, "%s: Unable to load firmware from file %s\n",
+					progname, filename);
+			exit(1);
+		}
 	} else {
 		if (elf_read_firmware(filename, fp) == -1) {
 			fprintf(stderr, "%s: Unable to load firmware from file %s\n",

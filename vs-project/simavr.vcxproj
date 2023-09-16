@@ -168,6 +168,7 @@
     <ClInclude Include="..\simavr\sim\avr_watchdog.h" />
     <ClInclude Include="..\simavr\sim\fifo_declare.h" />
     <ClInclude Include="..\simavr\sim\sim_avr.h" />
+    <ClInclude Include="..\simavr\sim\sim_avrobj.h" />
     <ClInclude Include="..\simavr\sim\sim_avr_types.h" />
     <ClInclude Include="..\simavr\sim\sim_cmds.h" />
     <ClInclude Include="..\simavr\sim\sim_core.h" />
@@ -245,6 +246,7 @@
     <ClCompile Include="..\simavr\sim\avr_usi.c" />
     <ClCompile Include="..\simavr\sim\avr_watchdog.c" />
     <ClCompile Include="..\simavr\sim\sim_avr.c" />
+    <ClCompile Include="..\simavr\sim\sim_avrobj.c" />
     <ClCompile Include="..\simavr\sim\sim_cmds.c" />
     <ClCompile Include="..\simavr\sim\sim_core.c" />
     <ClCompile Include="..\simavr\sim\sim_cycle_timers.c" />

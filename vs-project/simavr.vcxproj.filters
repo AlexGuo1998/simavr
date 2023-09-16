@@ -132,6 +132,9 @@
     <ClInclude Include="..\simavr\sim\sim_vcd_file.h">
       <Filter>sim</Filter>
     </ClInclude>
+    <ClInclude Include="..\simavr\sim\sim_avrobj.h">
+      <Filter>sim</Filter>
+    </ClInclude>
     <ClInclude Include="patch\sim_core_config.h">
       <Filter>patch</Filter>
     </ClInclude>
@@ -348,6 +351,9 @@
       <Filter>sim</Filter>
     </ClCompile>
     <ClCompile Include="..\simavr\sim\sim_vcd_file.c">
+      <Filter>sim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\simavr\sim\sim_avrobj.c">
       <Filter>sim</Filter>
     </ClCompile>
     <ClCompile Include="patch\patch_global.c">
